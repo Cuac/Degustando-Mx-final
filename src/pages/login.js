@@ -1,6 +1,12 @@
 import React from "react";
+import './login.css'
 function Login() {
     return
-    <p>Hola</p>
+    <h1 className='titulo'></h1>;
+    <div className='centro'>
+        <input className='registros'>Correo electronico</input>;
+        <input className='registros'>Contraceña</input>;
+    </div>
+
 }
 export default Login;
