@@ -1,6 +1,6 @@
 import React from "react";
-function Login() {
+function Calificar() {
     return
     <p>Hola</p>
 }
-export default Login;
+export default Calificar;
