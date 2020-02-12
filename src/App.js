@@ -1,9 +1,15 @@
 import React from 'react';
+import './assets/scss/App.scss'; //Importando estilos 
+import './assets/scss/Inicio.scss';
 
-import './App.css';
+//Importando el componente Inicio
+import Inicio from './pages/Inicio';
 
-function Login() {
-
+function App () {
+    return (
+        <Inicio />
+  );
 }
 
 export default App;
+
