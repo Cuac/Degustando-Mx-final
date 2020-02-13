@@ -9,7 +9,7 @@ class Inicio extends Component {
   render () { 
       return (
        
-       <div className="flex-logo" >
+       <div className="flex-logo" id="inicio" >
          <div> 
              <img src={appLogo}  alt="Logo"></img>  
           </div>
