@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import './assets/scss/App.scss'; //Importando estilos 
-import './assets/scss/Inicio.scss';
+import './assets/css/App.css'; //Importando estilos 
+import './assets/css/Inicio.css';
 
 //Importando el componente Inicio
 import Inicio from './pages/Inicio';
