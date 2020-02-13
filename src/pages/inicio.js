@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-
 import appLogo from '../assets/images/degus.png';
+import '../assets/css/inicio.css';
 
 //Definiendo el primer componente
 class Inicio extends Component {
