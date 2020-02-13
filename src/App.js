@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './App.css';
+import Negocios from './pages/negocios.js';
 
-function Login() {
-
+function App() {
+return <Negocios/>
 }
 
 export default App;
