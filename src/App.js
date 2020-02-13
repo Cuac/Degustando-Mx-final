@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
-//import './assets/scss/App.scss'; //Importando estilos 
-//import './assets/scss/Inicio.scss';
+import './assets/css/App.css'; //Importando estilos 
+import './assets/css/Inicio.css';
+import './assets/css/login.css'
 import Inicio from './pages/inicio';
 import Login from './pages/login'
+
 //Importando el componente Inicio
 
 
@@ -15,7 +17,7 @@ function App () {
         <Switch>
 
            <Route path="/Inicio" component={Inicio}/>
-           <Route path="/Inicio" component={Login}/>
+           <Route path="/Login" component={Login}/>
 
 
         </Switch>
