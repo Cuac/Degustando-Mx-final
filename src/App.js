@@ -1,10 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './assets/css/App.css'; //Importando estilos 
-//import './assets/css/inicio.css';
+
+import './assets/css/login.css'
+import Inicio from './pages/inicio';
+import Login from './pages/login'
 
 //Importando el componente Inicio
-import Inicio from './pages/inicio';
+
+
 
 
 function App () {
@@ -13,7 +17,12 @@ function App () {
       <BrowserRouter>
         <Switch>
 
-           <Route exactpath="/" component={Inicio}/>
+
+           <Route exact path="/" component={Inicio}/>
+        
+           <Route path="/Login" component={Login}/>
+
+
 
         </Switch>
       </BrowserRouter>
