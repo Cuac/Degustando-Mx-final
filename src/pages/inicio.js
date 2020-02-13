@@ -22,9 +22,9 @@ class Inicio extends Component {
                 </button>
              </div> 
             </a> 
-
+            
             <div >
-              <i className= "fas fa-pizza-slice" > O </i>
+               O
             </div> 
               
             <a href="login.html">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './assets/scss/App.scss'; //Importando estilos 
 import './assets/scss/Inicio.scss';
 
@@ -7,7 +8,14 @@ import Inicio from './pages/Inicio';
 
 function App () {
     return (
-        <Inicio />
+
+      <BrowserRouter>
+        <Switch>
+
+           <Route path="/Inicio" component={Inicio}/>
+
+        </Switch>
+      </BrowserRouter>
   );
 }
 
