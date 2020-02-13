@@ -1,9 +1,10 @@
 import React from 'react';
+import Login from './pages/login'
 
-import './App.css';
+import './pages/login.css';
 
-function Login() {
-
+function App() {
+    return <Login />
 }
 
 export default App;

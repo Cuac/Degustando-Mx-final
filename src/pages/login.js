@@ -1,12 +1,14 @@
 import React from "react";
 import './login.css'
 function Login() {
-    return
-    <h1 className='titulo'></h1>;
+    return (
+    
     <div className='centro'>
-        <input className='registros'>Correo electronico</input>;
-        <input className='registros'>Contraceña</input>;
+        <h1 className='titulo'>Regstro</h1>
+        <input className='registros'placeholder= 'Correo electronico' />
+        <input className='registros' placeholder= 'Contraceña' />
     </div>
+    )
 
 }
 export default Login;
