@@ -1,4 +1,9 @@
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
 body{
+ 
    margin:0;
    padding:0;
    background-image: url("../images/img_food.png");
@@ -10,7 +15,7 @@ body{
    background-size:cover;
    height: 100vh;
 }
-
+}
 
 .flex-logo {
   display: flex;
@@ -68,3 +73,4 @@ body{
     background-color: #02022c;
     font-family: "Roboto", sans-serif;
   }
+
