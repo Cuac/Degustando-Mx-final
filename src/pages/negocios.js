@@ -1,8 +1,14 @@
 import React from "react";
 
+import Regresar from '../components/regresar';
+
 
 function Negocios() {
-    return <p>Hola</p>
+    return (
+        <div>
+            <Regresar/>
+        </div>
+    )
 }
 
 export default Negocios;
