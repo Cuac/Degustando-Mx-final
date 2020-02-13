@@ -20,7 +20,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     
-  }
+}
 .registros{
         border-radius: 20px;
         text-align: center;
@@ -33,4 +33,7 @@
 .check{
     margin-top: 10px;
     
+}
+.boton{
+    margin-top: 10px;
 }

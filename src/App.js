@@ -6,6 +6,7 @@ import './assets/css/login.css'
 import Inicio from './pages/inicio';
 import Login from './pages/login'
 import Negocios from './pages/negocios';
+import Sesion from './pages/sesion'
 
 
 function App () {
@@ -19,6 +20,8 @@ function App () {
            <Route path="/Login" component={Login}/>
         
            <Route path="/Negocios" component={Negocios}/>
+
+           <Route path="/Sesion" component={Sesion}/>
 
 
         </Switch>
