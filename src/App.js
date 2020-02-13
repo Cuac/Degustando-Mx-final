@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './assets/css/App.css'; //Importando estilos 
-import './assets/css/inicio.css';
 
-
-//Importando el componente Inicio
-import Inicio from './pages/inicio';
 import Calificar from "./pages/calificar";
+import './assets/css/login.css'
+import Inicio from './pages/inicio';
+import Login from './pages/login'
+import Negocios from './pages/negocios';
+
 
 function App () {
     return (
@@ -15,7 +16,11 @@ function App () {
         <Switch>
 
            <Route exact path="/" component={Inicio}/>
-           <Route path="/" component={Calificar}/>
+           <Route path="/Calificar" component={Calificar}/>
+           <Route path="/Login" component={Login}/>
+           <Route path="/Negocios" component={Negocios}/>
+
+
 
         </Switch>
       </BrowserRouter>
