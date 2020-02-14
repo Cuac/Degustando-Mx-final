@@ -17,13 +17,13 @@ class Inicio extends Component {
        
         <div className="flex-inicio">
 
-            <Link to='/login'> Registrarme  </Link>
+            <Link className='boton' to='/login'> Registrarme  </Link>
 
             <div >
                O
             </div> 
               
-            <Link to='/sesion'> Iniciar Sesión  </Link>
+            <Link className='boton' to='/sesion'> Iniciar Sesión  </Link>
 
          </div>
 

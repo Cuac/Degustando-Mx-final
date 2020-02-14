@@ -15,14 +15,15 @@ function Login() {
          <div> 
              <img src={appLogo}  alt="Logo"></img>  
           </div>
-        </div>  
-        <input className='registros' placeholder= 'Correo electronico' />
-        <input className='registros' placeholder= 'Confirmar correo electronico'/>
-        <input className='registros' placeholder= 'Confirmar contraceña' />
-        <input className='registros' placeholder= 'Contraceña' />
-        <input className='check' type='checkbox' placeholder= "Recordarme" />
-        <Link  className= 'boton'to='/inicio'> Registrarme  </Link>
-
+        </div>
+        <div className='registro'>
+            <input className='registros' placeholder= 'Correo electronico' />
+            <input className='registros' placeholder= 'Confirmar correo electronico'/>
+            <input className='registros' placeholder= 'Contraceña' />
+            <input className='registros' placeholder= 'Confirmar contraceña' />
+            <input className='check' type='checkbox' placeholder= "Recordarme" />
+            <Link  className= 'boton' to='/'> Registrarme  </Link>
+        </div>
         
     </div>
     )
