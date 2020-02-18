@@ -15,8 +15,8 @@ function Calificar() {
         <section className="section">
             <img className="imagen-taqueria" src={Taqueria} alt="Taqueria"></img>
             <h3 className="title-taqueria" >Taqueria Don Chucho</h3>
-            <p>Te recomendamos que pruebes la salsa toreada en tu proxima visita.</p>
-        <div>
+            <p className="review-taqueria">Te recomendamos que pruebes la salsa toreada en tu proxima visita.</p>
+        <div className="qualify" >
             <h2>Califica</h2>
                 <form>
                     <p className="clasificacion">
@@ -31,12 +31,12 @@ function Calificar() {
                         <input id="radio5" type="radio" name="estrellas" value="1"/>
                         <label for="radio5">★</label>
                     </p>
-                    <div class="item5">
+                    <div class="commit1">
                         <textarea class="commit" name="comentarios" rows="6" cols="40">Escribe aquí tus comentarios</textarea>
                     </div>
             </form>
         </div>
-        <button>
+        <button className="button-qualify">
         Enviar
       </button>
         
