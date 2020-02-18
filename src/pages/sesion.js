@@ -4,9 +4,7 @@ import appLogo from '../assets/images/degus.png';
 import { Link} from 'react-router-dom';
 
 
-
-
-function Login() {
+function Sesion() {
     return (
     
     <div className='centro'>
@@ -18,15 +16,13 @@ function Login() {
         </div>
         <div className='registro'>
             <input className='registros' placeholder= 'Correo electronico' />
-            <input className='registros' placeholder= 'Confirmar correo electronico'/>
             <input className='registros' placeholder= 'Contraceña' />
-            <input className='registros' placeholder= 'Confirmar contraceña' />
             <input className='check' type='checkbox' placeholder= "Recordarme" />
-            <Link  className= 'boton' to='/'> Registrarme  </Link>
+            <Link  className='boton' to='/'> Iniciar Sesión  </Link>
         </div>
         
     </div>
     )
 
 }
-export default Login;
+export default Sesion;

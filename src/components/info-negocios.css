@@ -18,16 +18,16 @@ section form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
 
-    h2{
+.info-negocios h2{
     margin: 5px 5px;
     }
 
-    ul{
+.info-negocios ul{
     margin: 5px 5px;
     padding: 10px 10px;
     }
-}
 
 
 .img-logo-taco img{

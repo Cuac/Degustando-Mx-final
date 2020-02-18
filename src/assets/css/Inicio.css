@@ -6,6 +6,7 @@ body{
  
    margin:0;
    padding:0;
+   
    /*background-color: #b2c8f7;
    //background-repeat: no-repeat;
    //background-position: right top;
@@ -16,12 +17,17 @@ body{
 }
 }
 
+/*
+#inicio {
+  background-image: url("../images/img_food.png"); 
+}
+
+*/
+
 .flex-logo {
+  
   display: flex;
   flex-direction: column;
-  /*
-  //justify-content: center;
-  */
   align-items: center;
   width: 900px;
   height: 560px;
@@ -72,4 +78,5 @@ body{
     background-color: #02022c;
     font-family: "Roboto", sans-serif;
   }
+  
 
