@@ -1,11 +1,20 @@
-import React, {Component} from "react";
+import React, {} from "react";
 import Taqueria from "../assets/images/Pastor.jpg";
+import "../assets/css/calificar.css";
+import WebFont from 'webfontloader';
+
+WebFont.load({
+  google: {
+    families: ['Titillium Web:300,400,700', 'sans-serif']
+  }
+});
+
 function Calificar() {
     return (
         
-        <section>
-            <img src={Taqueria} alt="Taqueria"></img>
-            <h3>Taqueria Don Chucho</h3>
+        <section className="section">
+            <img className="imagen-taqueria" src={Taqueria} alt="Taqueria"></img>
+            <h3 className="title-taqueria" >Taqueria Don Chucho</h3>
             <p>Te recomendamos que pruebes la salsa toreada en tu proxima visita.</p>
         <div>
             <h2>Califica</h2>
