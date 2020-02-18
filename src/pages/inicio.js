@@ -3,6 +3,7 @@ import appLogo from '../assets/images/degus.png';
 import '../assets/css/inicio.css';
 import { Link} from 'react-router-dom';
 
+
 //Definiendo el primer componente
 class Inicio extends Component {
 
@@ -16,33 +17,26 @@ class Inicio extends Component {
           </div>
        
         <div className="flex-inicio">
+          <div>
+            <Link className='boton' to='/login'> Registrarme </Link>
+          </div>  
+          
+          <div >
+             O
+          </div> 
+                        
+          <div>
+               <Link className='boton' to='/sesion'> Iniciar Sesion  </Link>
+          </div> 
 
-            <Link className='boton' to='/login'> Registrarme  </Link>
-
-            <div >
-               O
-            </div> 
-              
-<<<<<<< HEAD
-            <a href="/Login">
-            <div>
-               <button class="registro-button">
-                         Inicio de Sesion 
-                </button>
-            </div>
-            </a>
-=======
-            <Link className='boton' to='/sesion'> Iniciar Sesión  </Link>
->>>>>>> origin/login
-
-         </div>
-
+          </div> 
         </div> 
        );
     }
 }
 
 export default Inicio;
+
 
 
 
