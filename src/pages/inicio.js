@@ -20,12 +20,8 @@ class Inicio extends Component {
           <div>
             <Link className='boton' to='/login'> Registrarme </Link>
           </div>  
-          
-          <div >
-             O
-          </div> 
-                        
-          <div>
+                                 
+          <div className= "margin">
                <Link className='boton' to='/sesion'> Iniciar Sesion  </Link>
           </div> 
 
