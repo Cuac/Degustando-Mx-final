@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import appLogo from '../assets/images/degus.png';
-import '../assets/css/inicio.css';
+import '../assets/css/init.css';
 import { Link} from 'react-router-dom';
 
 
