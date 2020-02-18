@@ -1,0 +1,21 @@
+.menu-comida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-comida ul{
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.menu-comida h2{
+margin: 0 0;
+}
+
+.boton-vamosacomer{
+    display: flex;
+    justify-content: center;
+}
