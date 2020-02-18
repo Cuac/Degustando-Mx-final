@@ -7,6 +7,7 @@ import './assets/css/inicio.css';
 import Inicio from './pages/inicio';
 import Login from './pages/login'
 import Negocios from './pages/negocios';
+import Sesion from './pages/sesion'
 
 function App () {
     return (
@@ -17,6 +18,9 @@ function App () {
            <Route path="/Calificar" component={Calificar}/>
            <Route path="/Login" component={Login}/>
            <Route path="/Negocios" component={Negocios}/>
+           <Route path="/Sesion" component={Sesion}/>
+
+
         </Switch>
 
       </BrowserRouter>

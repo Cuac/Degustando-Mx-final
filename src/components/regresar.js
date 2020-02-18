@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 function Regresar () {
