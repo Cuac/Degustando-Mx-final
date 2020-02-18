@@ -9,19 +9,17 @@ import { Link} from 'react-router-dom';
 function Login() {
     return (
     
-    <div className='centro'>
+    <div className='flex-logo'>
         <h1 className='titulo'>Registro</h1>
-        <div className="flex-logo" >
-         <div> 
-             <img src={appLogo}  alt="Logo"></img>  
-          </div>
+        <div> 
+            <img src={appLogo}  alt="Logo"></img>  
         </div>
         <div className='registro'>
             <input className='registros' placeholder= 'Correo electronico' />
             <input className='registros' placeholder= 'Confirmar correo electronico'/>
             <input className='registros' placeholder= 'Contraceña' />
             <input className='registros' placeholder= 'Confirmar contraceña' />
-            <input className='check' type='checkbox' placeholder= "Recordarme" />
+            <label className='check'><input  type='checkbox'/> Recordarme </label>
             <Link  className= 'boton' to='/'> Registrarme  </Link>
         </div>
         

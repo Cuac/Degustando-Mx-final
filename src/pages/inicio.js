@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 import appLogo from '../assets/images/degus.png';
-import '../assets/css/inicio.css';
+import '../assets/css/init.css';
 import { Link} from 'react-router-dom';
-
 
 //Definiendo el primer componente
 class Inicio extends Component {
@@ -20,12 +19,8 @@ class Inicio extends Component {
           <div>
             <Link className='boton' to='/login'> Registrarme </Link>
           </div>  
-          
-          <div >
-             O
-          </div> 
-                        
-          <div>
+                                 
+          <div className= "margin">
                <Link className='boton' to='/sesion'> Iniciar Sesion  </Link>
           </div> 
 
