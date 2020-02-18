@@ -7,17 +7,15 @@ import { Link} from 'react-router-dom';
 function Sesion() {
     return (
     
-    <div className='centro'>
-        <h1 className='titulo'>Registro</h1>
-        <div className="flex-logo" >
-         <div> 
-             <img src={appLogo}  alt="Logo"></img>  
-          </div>
+    <div className='flex-logo'>
+        <h1 className='titulo'>Inicio de Sesión</h1>
+        <div> 
+            <img src={appLogo}  alt="Logo"></img>  
         </div>
         <div className='registro'>
             <input className='registros' placeholder= 'Correo electronico' />
             <input className='registros' placeholder= 'Contraceña' />
-            <input className='check' type='checkbox' placeholder= "Recordarme" />
+            <label className='check'><input  type='checkbox'/> Recordarme </label>
             <Link  className='boton' to='/'> Iniciar Sesión  </Link>
         </div>
         

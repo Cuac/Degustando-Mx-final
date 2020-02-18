@@ -9,12 +9,10 @@ import { Link} from 'react-router-dom';
 function Login() {
     return (
     
-    <div className='centro'>
+    <div className='flex-logo'>
         <h1 className='titulo'>Registro</h1>
-        <div className="flex-logo" >
-         <div> 
-             <img src={appLogo}  alt="Logo"></img>  
-          </div>
+        <div> 
+            <img src={appLogo}  alt="Logo"></img>  
         </div>
         <div className='registro'>
             <input className='registros' placeholder= 'Correo electronico' />
