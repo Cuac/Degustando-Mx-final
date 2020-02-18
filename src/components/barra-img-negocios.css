@@ -1,0 +1,10 @@
+.imagenes-negocio{
+    display: flex; 
+}
+
+.imagenes-negocio img {
+    justify-content: center;
+    width: 48vw;
+    height: 15vh;
+    object-fit: cover;
+}
