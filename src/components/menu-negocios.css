@@ -15,7 +15,15 @@
 margin: 0 0;
 }
 
-.boton-vamosacomer{
+.boton-vamosacomer {
     display: flex;
     justify-content: center;
+}
+
+.boton-vamosacomer .boton{
+    height: auto;
+    padding: 10px;
+    width: 80vw;
+
+
 }

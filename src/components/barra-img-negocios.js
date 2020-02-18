@@ -6,7 +6,7 @@ import imagenTaco2 from "../assets/images/tacos2.jpg";
 
 function BarraImgNegocios () {
     return (
-    <div class="imagenes-negocio">
+    <div className="imagenes-negocio">
         <div>
             <img src={imagenTaco1} alt="tacos-mexico"/>
         </div>

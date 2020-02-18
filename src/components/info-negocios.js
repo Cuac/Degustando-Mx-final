@@ -5,7 +5,7 @@ import logoTacosJuan1 from "../assets/images/tacos-juan-2.png";
 
 function InfoNegocios () {
     return (
-        <div class="info-negocio">
+        <div className="info-negocio">
              <div className="img-logo-taco">
                     <img src={logoTacosJuan1} alt="logo-tacojuan" />
              </div>
