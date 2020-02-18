@@ -5,7 +5,6 @@ import { Link} from 'react-router-dom';
 
 
 
-
 function Login() {
     return (
     
@@ -20,7 +19,7 @@ function Login() {
             <input className='registros' placeholder= 'Contraceña' />
             <input className='registros' placeholder= 'Confirmar contraceña' />
             <label className='check'><input  type='checkbox'/> Recordarme </label>
-            <Link  className= 'boton' to='/'> Registrarme  </Link>
+            <Link  className= 'boton' to='/mapa'> Registrarme  </Link>
         </div>
         
     </div>

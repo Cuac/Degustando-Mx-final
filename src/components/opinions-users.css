@@ -20,13 +20,8 @@ section form {
 }
 
 
-
-
-.user-description p img{
+.user-description p{
     display: flex;
     flex-wrap: wrap;
-}
-
-.user-description p{
     padding-left: 8px;
 }

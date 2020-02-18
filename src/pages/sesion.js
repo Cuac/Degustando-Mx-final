@@ -16,7 +16,7 @@ function Sesion() {
             <input className='registros' placeholder= 'Correo electronico' />
             <input className='registros' placeholder= 'Contraceña' />
             <label className='check'><input  type='checkbox'/> Recordarme </label>
-            <Link  className='boton' to='/'> Iniciar Sesión  </Link>
+            <Link  className='boton' to='/mapa'> Iniciar Sesión  </Link>
         </div>
         
     </div>
