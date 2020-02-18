@@ -1,4 +1,6 @@
+
 import React, {} from "react";
+import Regresar from "../components/regresar";
 import Taqueria from "../assets/images/Pastor.jpg";
 import "../assets/css/calificar.css";
 import WebFont from 'webfontloader';
@@ -12,7 +14,9 @@ WebFont.load({
 function Calificar() {
     return (
         
+    
         <section className="section">
+            <Regresar/>
             <img className="imagen-taqueria" src={Taqueria} alt="Taqueria"></img>
             <h3 className="title-taqueria" >Taqueria Don Chucho</h3>
             <p className="review-taqueria">Te recomendamos que pruebes la salsa toreada en tu proxima visita.</p>
@@ -31,14 +35,16 @@ function Calificar() {
                         <input id="radio5" type="radio" name="estrellas" value="1"/>
                         <label for="radio5">★</label>
                     </p>
-                    <div class="commit1">
-                        <textarea class="commit" name="comentarios" rows="6" cols="40">Escribe aquí tus comentarios</textarea>
+                    <div>
+                        <textarea className="commit1" rows="5" cols="39">Escribe aquí tus comentarios</textarea>
                     </div>
             </form>
         </div>
-        <button className="button-qualify">
+        <div className="boton-qualify">
+        <button className="boton">
         Enviar
       </button>
+        </div>
         
         </section>
     );
