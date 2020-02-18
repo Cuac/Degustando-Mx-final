@@ -21,7 +21,7 @@ function Login() {
             <input className='registros' placeholder= 'Confirmar correo electronico'/>
             <input className='registros' placeholder= 'Contraceña' />
             <input className='registros' placeholder= 'Confirmar contraceña' />
-            <input className='check' type='checkbox' placeholder= "Recordarme" />
+            <label className='check'><input  type='checkbox'/> Recordarme </label>
             <Link  className= 'boton' to='/'> Registrarme  </Link>
         </div>
         
