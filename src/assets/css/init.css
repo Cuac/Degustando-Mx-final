@@ -1,34 +1,49 @@
+/*
+@media only screen and (min-width: 768px){
+   
+ } 
+  
+@media only screen and (min-width: 1440px){ 
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-
+}
+*/
 body{
  
    margin:0;
    padding:0;
+<<<<<<< HEAD:src/assets/css/Inicio.css
+=======
+   
+>>>>>>> origin/login:src/assets/css/init.css
    /*background-color: #b2c8f7;
    //background-repeat: no-repeat;
    //background-position: right top;
    //background-attachment: fixed;
    */
-   background-size:cover;
+  /*background-size:cover; */
    height: 100vh;
 }
+
+
+/*
+#inicio {
+  background-image: url("../images/img_food.png"); 
 }
 
+*/
+
 .flex-logo {
+  
   display: flex;
   flex-direction: column;
-  /*
-  //justify-content: center;
-  */
   align-items: center;
-  width: 900px;
-  height: 560px;
+  height: 80vh;
+  justify-content: space-around;
+   /*
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   
 }
 
@@ -41,13 +56,7 @@ body{
   flex-direction: column;
  /* //justify-content: center; */
   align-items: center;
-  width: 20px;
-  height: 50px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  
+   
 }
 
 .Inicio {
@@ -72,5 +81,7 @@ body{
     background-color: #02022c;
     font-family: "Roboto", sans-serif;
   }
-  
 
+.margin {
+  margin-top: 20px;
+}
