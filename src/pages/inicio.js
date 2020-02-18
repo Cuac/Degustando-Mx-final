@@ -17,19 +17,6 @@ class Inicio extends Component {
           </div>
        
         <div className="flex-inicio">
-<<<<<<< HEAD
-
-            <Link className='boton' to='/login'> Registrarme  </Link>
-
-            <div>
-               O
-            </div> 
-              
-            <Link className='boton' to='/sesion'> Iniciar Sesión  </Link>
-
-         </div>
-
-=======
           <div>
             <Link className='boton' to='/login'> Registrarme </Link>
           </div>  
@@ -43,7 +30,6 @@ class Inicio extends Component {
           </div> 
 
           </div> 
->>>>>>> origin/inicio
         </div> 
        );
     }
