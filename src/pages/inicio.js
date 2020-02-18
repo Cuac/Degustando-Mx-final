@@ -27,7 +27,7 @@ class Inicio extends Component {
                O
             </div> 
               
-            <a href="login.html">
+            <a href="login.js">
             <div>
                <button class="registro-button">
                          Inicio de Sesion 
