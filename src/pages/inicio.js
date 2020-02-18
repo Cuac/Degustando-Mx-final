@@ -19,7 +19,7 @@ class Inicio extends Component {
 
             <Link className='boton' to='/login'> Registrarme  </Link>
 
-            <div >
+            <div>
                O
             </div> 
               

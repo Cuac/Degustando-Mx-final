@@ -49,14 +49,15 @@
     
 }
 .boton{
+    width: 100%;
+    height: 20px;
     border-radius: 30px;
-    padding: 5px 15px;
     font-size: 20px;
-    text-size-adjust: center;
+    text-align: center;
     text-decoration-line: none;
     color: rgb(7, 7, 7);
     position: relative;
-    display: flex;
+    display: block;
     background-color: rgba(14, 196, 8, 0.61);
     border-color: rgba(7, 7, 7, 0.493);
     border-bottom-style: solid;
@@ -67,9 +68,11 @@
     border-top-width: 3px;
     border-right-style: solid;
     border-right-width: 3px;
+    padding-top: 10px;
     width: 100%;
     height: 20px;
     top: 50%;
+    line-height: 10px;
 
 
 
