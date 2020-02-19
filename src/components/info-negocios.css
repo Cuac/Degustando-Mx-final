@@ -1,36 +1,66 @@
 section form {
-    display: flex;
-    flex-direction: column;
-    font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
 }
 
-.campos{
-    border-radius: 20px;
-    text-align: center;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    background-color: rgba(143, 143, 143, 0.479);
-    border: none;
-    margin-top: 30px;
+.campos {
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  background-color: rgba(143, 143, 143, 0.479);
+  border: none;
+  margin-top: 30px;
 }
 
-.info-negocio{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.info-negocio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.info-negocios h2{
-    margin: 5px 5px;
-    }
+.info-negocios h2 {
+  margin: 5px 5px;
+}
 
-.info-negocios ul{
-    margin: 5px 5px;
-    padding: 10px 10px;
-    }
+.info-negocios ul {
+  margin: 5px 5px;
+  padding: 10px 10px;
+}
 
+.img-logo-taco img {
+  width: 15vw;
+  margin: 0px 5px;
+  padding-top: 10px;
+}
 
-.img-logo-taco img{
-    width: 35vw;
-    margin: 0px 5px;
+.titulo-negocio {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.lista-datos {
+  align-items: center;
+  border-top: solid;
+  border-width: 1px;
+  border-color: #d3d3d3;
+  padding-left: 15px;
+}
+
+.lista-datos ul {
+  list-style: none;
+  color: #4b4c4d;
+  padding-inline-start: 0px;
+}
+
+.lista-datos li {
+  padding-top: 8px;
+}
+
+.star-review {
+  display: inline-block;
 }
