@@ -14,15 +14,27 @@ section form {
   margin-top: 30px;
 }
 
+.contenedor-titulo-negocios{
+  display: flex;
+  align-items: left;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.titulo-negocio{
+  flex: 5 1;
+}
+
 .info-negocio {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
   font-family: "Roboto", sans-serif;
 }
 
-.info-negocios h2 {
-  margin: 5px 5px;
+.titulo-negocio h2 {
+margin: 0;
+padding: 0;
 }
 
 .info-negocios ul {
@@ -30,16 +42,21 @@ section form {
   padding: 10px 10px;
 }
 
+.img-logo-taco{
+  flex: 1;
+}
+
 .img-logo-taco img {
   width: 15vw;
   margin: 0px 5px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .titulo-negocio {
+  flex: 5;
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top:5px;
+  padding-bottom:5px;
   padding-left: 15px;
 }
 
@@ -62,5 +79,13 @@ section form {
 }
 
 .star-review {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.star-review p{
+  margin: 0;
+  padding-top: 5px;
 }
