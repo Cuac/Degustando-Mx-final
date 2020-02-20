@@ -1,5 +1,5 @@
 import React from "react";
-import './menu-negocios.css';
+import '../assets/css/menu-negocios.css';
 
 function MenuNegocios () {
     return (

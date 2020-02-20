@@ -1,5 +1,5 @@
 import React from "react";
-import "./info-negocios.css";
+import "../assets/css/info-negocios.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowAltCircleLeft,
