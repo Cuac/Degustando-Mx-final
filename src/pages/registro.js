@@ -1,42 +1,29 @@
-import React, {useState} from "react";
+import React from "react";
 import '../assets/css/login.css';
 import appLogo from '../assets/images/degus.png';
 import { Link} from 'react-router-dom';
 
-function Sesion() {
 
-    const [todo, setTodo] = useState("");
-  
-    const usuario = event => {
-      setTodo(event.target.value);
-    }
-    const handleClick = event => {
-        // Agregar el todo
-        props.addTodo(todo);
-        setTodo("");
-      };
-    
-      const handleSubmit = event => {
-        event.preventDefault();
-      };
 
+function Login() {
     return (
     
     <div className='flex-logo'>
-        <h1 className='titulo'>Inicio de Sesión</h1>
+        <h1 className='titulo'>Registro</h1>
         <div> 
             <img src={appLogo}  alt="Logo"></img>  
         </div>
         <div className='registro'>
             <input className='registros' placeholder= 'Correo electronico' />
+            <input className='registros' placeholder= 'Confirmar correo electronico'/>
             <input className='registros' placeholder= 'Contraceña' />
+            <input className='registros' placeholder= 'Confirmar contraceña' />
             <label className='check'><input  type='checkbox'/> Recordarme </label>
-            <Link  className='boton' to='/mapa'> Iniciar Sesión  </Link>
+            <Link  className= 'boton' to='/mapa'> Registrarme  </Link>
         </div>
         
     </div>
     )
 
 }
-
-export default Sesion;
+export default Login;
