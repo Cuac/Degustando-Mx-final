@@ -9,6 +9,7 @@ import Login from './pages/login'
 import Negocios from './pages/negocios';
 import Sesion from './pages/sesion';
 import Mapa from './pages/mapa';
+import IrAComer from './pages/ir-a-comer';
 
 function App () {
     return (
@@ -21,6 +22,7 @@ function App () {
            <Route path="/Negocios" component={Negocios}/>
            <Route path="/Sesion" component={Sesion}/>
            <Route path="/mapa" component={Mapa}/>
+           <Route path="/ir-a-comer" component={IrAComer}/>
 
         </Switch>
 
