@@ -1,10 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import '../assets/css/login.css';
 import appLogo from '../assets/images/degus.png';
 import { Link} from 'react-router-dom';
 
-
 function Sesion() {
+
+    const [todo, setTodo] = useState("");
+  
+    const usuario = event => {
+      setTodo(event.target.value);
+    }
+    const handleClick = event => {
+        // Agregar el todo
+        props.addTodo(todo);
+        setTodo("");
+      };
+    
+      const handleSubmit = event => {
+        event.preventDefault();
+      };
+
     return (
     
     <div className='flex-logo'>
