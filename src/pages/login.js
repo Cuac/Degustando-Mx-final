@@ -1,9 +1,28 @@
 import React, {useState} from "react";
 import '../assets/css/login.css';
 import appLogo from '../assets/images/degus.png';
-import { Link} from 'react-router-dom';
 
-function Sesion() {
+function Sesion(props) {
+  const [correo, setCorreo] = useState("");
+  const [pass, setPass] = useState("");
+
+  const handleChange = event => {
+    setCorreo(event.target.value);
+  };
+  const handleChangeTwo = event => {
+    setPass(event.target.value);
+  };
+  const handleSubmit = event => {
+    event.preventDefault();
+       console.log(correo);
+      console.log(pass);
+    if (correo === 'degustando@degustando.com' && pass === '1234'){
+      console.log('Usuario valido');
+      props.history.push('/mapa');
+    } else{
+      alert ('Usuario invalido, inteta de nuevo')
+    }
+  };
 
     return (
     
@@ -12,12 +31,12 @@ function Sesion() {
         <div> 
             <img src={appLogo}  alt="Logo"></img>  
         </div>
-        <div className='registro'>
-            <input className='registros' placeholder= 'Correo electronico' />
-            <input className='registros' placeholder= 'Contraceña' />
+        <form className='registro' onSubmit={handleSubmit}>
+            <input onChange={handleChange} className='registros' placeholder= 'Correo electronico' />
+            <input onChange={handleChangeTwo} className='registros' type='password' placeholder= 'Contraseña' />
             <label className='check'><input  type='checkbox'/> Recordarme </label>
-            <Link  className='boton' to='/mapa'> Iniciar Sesión  </Link>
-        </div>
+            <button className='botonOne'> Iniciar Sesión  </button>
+        </form>
         
     </div>
     )

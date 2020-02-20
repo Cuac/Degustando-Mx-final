@@ -16,8 +16,8 @@ function Login() {
         <div className='registro'>
             <input className='registros' placeholder= 'Correo electronico' />
             <input className='registros' placeholder= 'Confirmar correo electronico'/>
-            <input className='registros' placeholder= 'Contraceña' />
-            <input className='registros' placeholder= 'Confirmar contraceña' />
+            <input className='registros' placeholder= 'Contraseña' />
+            <input className='registros' placeholder= 'Confirmar contraseña' />
             <label className='check'><input  type='checkbox'/> Recordarme </label>
             <Link  className= 'boton' to='/mapa'> Registrarme  </Link>
         </div>
