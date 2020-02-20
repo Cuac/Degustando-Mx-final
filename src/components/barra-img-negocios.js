@@ -1,5 +1,5 @@
 import React from "react";
-import "./barra-img-negocios.css";
+import "../assets/css/barra-img-negocios.css";
 
 import imagenTaco1 from "../assets/images/tacos1.jpg";
 import imagenTaco2 from "../assets/images/tacos2.jpg";
