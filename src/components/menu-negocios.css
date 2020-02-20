@@ -1,0 +1,40 @@
+.menu-comida {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 15px;
+}
+
+.menu-comida ul {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: #4b4c4d;
+  padding-inline-start: 0px;
+  margin-top: 5px;
+}
+
+.menu-comida li {
+  margin-left: 0px;
+  padding-left: 0;
+  padding-top: 5px;
+}
+
+.menu-comida h2 {
+  margin: 0 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.boton-vamosacomer {
+  display: flex;
+  justify-content: center;
+}
+
+.boton-vamosacomer .boton {
+  height: auto;
+  padding: 10px;
+  width: 80vw;
+  margin: 15px;
+}
