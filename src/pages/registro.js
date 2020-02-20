@@ -1,11 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import '../assets/css/login.css';
 import appLogo from '../assets/images/degus.png';
-import { Link} from 'react-router-dom';
 
 
+function Sesion (props) {
+    const [nom, setNom] = useState("");
+    const [correo, setCorreo] = useState("");
+    const [correo2, setCorreo2] = useState("");
+    const [pass, setPass] = useState("");
+    const [pass2, setPass2] = useState("");
+  
+    const handleChangeCero = event => {
+        setNom(event.target.value);
+    };
+    const handleChange = event => {
+      setCorreo(event.target.value);
+    };
+    const handleChangeOne = event => {
+      setCorreo2(event.target.value);
+    };
+    const handleChangeTwo = event => {
+        setPass(event.target.value);
+      };
+      const handleChangeTree = event => {
+        setPass2(event.target.value);
+      };
+    const handleSubmit = event => {
+      event.preventDefault();
 
-function Login() {
+      if (nom && nom.length > 2 && correo && correo2 && pass && correo === correo2 && pass2 && pass === pass2){
+        console.log("El usuario registrado es: "); 
+        alert  ("Felicidades haz sido registrado");
+        props.history.push('/mapa');
+      } else{
+        alert ('Llenar todos los campos por favor')
+      }
+    };
+  
     return (
     
     <div className='flex-logo'>
@@ -13,17 +44,18 @@ function Login() {
         <div> 
             <img src={appLogo}  alt="Logo"></img>  
         </div>
-        <div className='registro'>
-            <input className='registros' placeholder= 'Correo electronico' />
-            <input className='registros' placeholder= 'Confirmar correo electronico'/>
-            <input className='registros' placeholder= 'Contraseña' />
-            <input className='registros' placeholder= 'Confirmar contraseña' />
+        <form className='registro' onSubmit={handleSubmit}>
+            <input onChange={handleChangeCero} className='registros' placeholder= 'Nombre del Garnachero' />
+            <input onChange={handleChange} className='registros' placeholder= 'Correo electronico' />
+            <input onChange={handleChangeOne} className='registros' placeholder= 'Confirmar correo electronico'/>
+            <input onChange={handleChangeTwo} className='registros' placeholder= 'Contraseña' />
+            <input onChange={handleChangeTree} className='registros' placeholder= 'Confirmar contraseña' />
             <label className='check'><input  type='checkbox'/> Recordarme </label>
-            <Link  className= 'boton' to='/mapa'> Registrarme  </Link>
-        </div>
+            <button className='botonOne'> Registrarme  </button>
+        </form>
         
     </div>
     )
 
 }
-export default Login;
+export default Sesion;
