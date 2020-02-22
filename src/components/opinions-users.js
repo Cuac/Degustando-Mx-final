@@ -1,5 +1,5 @@
 import React from "react";
-import "./opinions-users.css";
+import "../assets/css/opinions-users.css";
 
 import userAvatar1 from "../assets/images/user-1.png";
 import userAvatar2 from "../assets/images/user-2.png";

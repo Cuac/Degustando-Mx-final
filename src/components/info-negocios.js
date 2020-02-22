@@ -1,5 +1,5 @@
 import React from "react";
-import "./info-negocios.css";
+import "../assets/css/info-negocios.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowAltCircleLeft,
@@ -14,17 +14,20 @@ import logoTacosJuan1 from "../assets/images/logo-tacos-donjuan.png";
 function InfoNegocios() {
   return (
     <div className="info-negocio">
+      <div className="contenedor-titulo-negocios">
       <div className="img-logo-taco">
         <img src={logoTacosJuan1} alt="logo-tacojuan" />
       </div>
       <div className="titulo-negocio">
         <h2>Tacos Juan</h2>
-      </div>
-
-      <div className="star-review">
+        <div className="star-review">
         <FontAwesomeIcon icon={faStar} />
         <p>4.6</p>
       </div>
+      </div>
+    </div>
+
+      
 
       <div className="lista-datos">
         <ul>
