@@ -49,7 +49,7 @@ function Sesion (props) {
             <input onChange={handleChange} className='registros' placeholder= 'Correo electronico' />
             <input onChange={handleChangeOne} className='registros' placeholder= 'Confirmar correo electronico'/>
             <input onChange={handleChangeTwo} className='registros' placeholder= 'Contraseña' />
-            <input onChange={handleChangeTree} className='registros' placeholder= 'Confirmar contraseña' />
+            <input onChange={handleChangeTree} className='registros' type='password' placeholder= 'Confirmar contraseña' />
             <label className='check'><input  type='checkbox'/> Recordarme </label>
             <button className='botonOne'> Registrarme  </button>
         </form>
