@@ -31,7 +31,7 @@ function Sesion () {
         event.preventDefault();
       firebase
       .auth()
-      .createUserWithEmailAndPassword(correo, correo2, pass, pass2)
+      .createUserWithEmailAndPassword(nom,correo, correo2, pass, pass2)
       .then(usuario =>{
         setUsuario (usuario);
       } )
