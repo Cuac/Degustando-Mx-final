@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import appLogo from '../assets/images/degus.png';
+import appLogo from '../assets/images/logo-degustado-nuevo.png.JPG';
 import '../assets/css/init.css';
 import { Link} from 'react-router-dom';
 

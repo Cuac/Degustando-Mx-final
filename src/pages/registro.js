@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import firebase from 'firebase';
 import '../assets/css/login.css';
-import appLogo from '../assets/images/degus.png';
+import appLogo from '../assets/images/logo-degustado-nuevo.png.JPG';
 
 
 function Sesion () {
