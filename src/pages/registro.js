@@ -38,6 +38,7 @@ function Sesion () {
       } )
       .catch(function(error) {
         alert.log(error);
+        props.history.push('/mapa');
       
 });
     };
