@@ -10,6 +10,7 @@ function Sesion () {
     const [correo2, setCorreo2] = useState("");
     const [pass, setPass] = useState("");
     const [pass2, setPass2] = useState("");
+    const [usuario, setUsuario] =useState (null);
   
     const handleChangeCero = event => {
         setNom(event.target.value);
