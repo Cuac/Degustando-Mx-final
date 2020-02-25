@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import firebase from 'firebase';
 import '../assets/css/login.css';
 import appLogo from '../assets/images/degus.png';
 
 
-function Sesion (props) {
+function Sesion () {
     const [nom, setNom] = useState("");
     const [correo, setCorreo] = useState("");
     const [correo2, setCorreo2] = useState("");
@@ -25,16 +26,19 @@ function Sesion (props) {
       const handleChangeTree = event => {
         setPass2(event.target.value);
       };
-    const handleSubmit = event => {
-      event.preventDefault();
-
-      if (nom && nom.length > 2 && correo && correo2 && pass && correo === correo2 && pass2 && pass === pass2){
-        console.log("El usuario registrado es: "); 
-        alert  ("Felicidades haz sido registrado");
-        props.history.push('/mapa');
-      } else{
-        alert ('Llenar todos los campos por favor')
-      }
+      
+      const login = event =>{
+        event.preventDefault();
+      firebase
+      .auth()
+      .createUserWithEmailAndPassword(correo, correo2, pass, pass2)
+      .then(usuario =>{
+        setUsuario (usuario);
+      } )
+      .catch(function(error) {
+        alert.log(error);
+      
+});
     };
   
     return (
@@ -44,7 +48,7 @@ function Sesion (props) {
         <div> 
             <img src={appLogo}  alt="Logo"></img>  
         </div>
-        <form className='registro' onSubmit={handleSubmit}>
+        <form className='registro' onSubmit={login}>
             <input onChange={handleChangeCero} className='registros' placeholder= 'Nombre del Garnachero' />
             <input onChange={handleChange} className='registros' placeholder= 'Correo electronico' />
             <input onChange={handleChangeOne} className='registros' placeholder= 'Confirmar correo electronico'/>
