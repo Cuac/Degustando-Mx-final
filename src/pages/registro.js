@@ -30,7 +30,7 @@ function Sesion (props) {
       
       const login = event =>{
         event.preventDefault();
-      firebase.auth().createUserWithEmailAndPassword(nom,correo, correo2, pass, pass2).then(usuario =>{setUsuario (usuario);}).catch(function(error) {alert.log(error);
+      firebase.auth().createUserWithEmailAndPassword(correo, correo2, pass, pass2).then(usuario =>{setUsuario (usuario);}).catch(function(error) {alert.log(error);
         props.history.push('/mapa');
       
 });
@@ -47,7 +47,7 @@ function Sesion (props) {
             <input onChange={handleChangeCero} className='registros' placeholder= 'Nombre del Garnachero' />
             <input onChange={handleChange} className='registros' placeholder= 'Correo electronico' />
             <input onChange={handleChangeOne} className='registros' placeholder= 'Confirmar correo electronico'/>
-            <input onChange={handleChangeTwo} className='registros' placeholder= 'Contraseña' />
+            <input onChange={handleChangeTwo} className='registros' type='password' placeholder= 'Contraseña' />
             <input onChange={handleChangeTree} className='registros' type='password' placeholder= 'Confirmar contraseña' />
             <label className='check'><input  type='checkbox'/> Recordarme </label>
             <button className='botonOne'> Registrarme  </button>
