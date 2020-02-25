@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import '../assets/css/login.css';
-import appLogo from '../assets/images/degus.png';
+import appLogo from '../assets/images/logo-degustado-nuevo.png.JPG';
 
 function Sesion(props) {
   const [correo, setCorreo] = useState("");

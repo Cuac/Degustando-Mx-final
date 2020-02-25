@@ -18,23 +18,22 @@ body{
 
  .flex-inicio {
     display: flex;
-    flex-direction: column;
+   /* flex-direction: column; */
     align-items: flex-start;
     justify-content: space-between;
     padding: 10px;
+    position: relative; 
          
 }
 
-.flex-input {
-    width: 500px;
-
-}
 
 .flex-map {
     width: 100%;
 }
 
-
-
+.flex-negocio {
+    position: absolute;
+    z-index: 2;
+}
 
 

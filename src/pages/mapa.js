@@ -1,7 +1,7 @@
 import React from "react";
 import MyMapComponent from "../components/ubicacion";
 import '../assets/css/mapa.css';
-
+import { Link} from 'react-router-dom';
 
 class Mapa extends React.Component {
    
@@ -9,7 +9,6 @@ class Mapa extends React.Component {
     super(props);
     this.state = {latitude:19.39068, longitude:-99.2836971};
   }
-
   
   componentDidMount() {
 
@@ -34,29 +33,18 @@ class Mapa extends React.Component {
       navigator.geolocation.getCurrentPosition(success, error);
     }
   }
-
-  
   
   render() {
       return (
           
         <section>
         <div className="flex-inicio" > 
-             <input className="flex-input" placeholder="Buscar ...."   />
-           <div>
-             <i class="fa fa-bars"></i>
-           </div> 
-       
-           <div>
-              <ul>
-                <li>Bebidas</li>
-                <li>Mexicana</li>
-                <li>Vegetariana</li>
-                <li>Postres</li>
-                <li>Desayunos</li>
-                <li>Postres</li>
-               </ul>
-            </div>
+             
+          <div className ="flex-negocio" >
+             <div>
+              <Link className='boton' to='/negocios'>  NEGOCIOS </Link>
+             </div> 
+         </div>
            
             <div className="flex-map" >
               <MyMapComponent
