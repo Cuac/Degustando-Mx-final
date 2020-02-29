@@ -4,7 +4,7 @@ import '../assets/css/login.css';
 import appLogo from '../assets/images/logo-degustado-nuevo.png.JPG';
 
 
-function Sesion (props) {
+function Sesion (propsn) {
     const [nom, setNom] = useState("");
     const [correo, setCorreo] = useState("");
     const [correo2, setCorreo2] = useState("");
