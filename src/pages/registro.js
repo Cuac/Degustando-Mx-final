@@ -4,7 +4,7 @@ import '../assets/css/login.css';
 import appLogo from '../assets/images/logo-degustado-nuevo.png.JPG';
 
 
-function Sesion (propsn) {
+function Sesion (props) {
     const [nom, setNom] = useState("");
     const [correo, setCorreo] = useState("");
     const [correo2, setCorreo2] = useState("");
@@ -31,12 +31,12 @@ function Sesion (propsn) {
       const login = event =>{
         event.preventDefault();
       firebase
-      .auth()
-      .createUserWithEmailAndPassword(nom,correo, correo2, pass, pass2)
-      .then(usuario =>{
-        setUsuario (usuario);
-      } )
-      .catch(function(error) {
+          .auth()
+          .createUserWithEmailAndPassword(nom,correo, correo2, pass, pass2)
+          .then(usuario =>{
+          setUsuario (usuario);
+        } )
+        .catch(function(error) {
         alert.log(error);
         props.history.push('/mapa');
       
