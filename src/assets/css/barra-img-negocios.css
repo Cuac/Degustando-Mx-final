@@ -8,3 +8,29 @@
   height: 15vh;
   object-fit: cover;
 }
+
+@media only screen and (min-width: 768px) {
+  .imagenes-negocio {
+    display: flex;
+  }
+
+  .imagenes-negocio img {
+    justify-content: center;
+    width: 50vw;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .imagenes-negocio {
+    display: flex;
+  }
+
+  .imagenes-negocio img {
+    justify-content: center;
+    width: 50vw;
+    height: 300px;
+    object-fit: cover;
+  }
+}
