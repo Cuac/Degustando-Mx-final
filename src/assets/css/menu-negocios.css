@@ -35,6 +35,33 @@
 .boton-vamosacomer .boton {
   height: auto;
   padding: 15px;
-  width: 80vw;
+  width: 30vw;
   margin: 20px;
+  border: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor-menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-comida {
+    background: rgba(40, 237, 87, 0.2);
+    margin: 50px;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 12px;
+    align-items: center;
+  }
+
+  .menu-comida ul {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
 }

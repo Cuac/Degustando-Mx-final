@@ -16,21 +16,24 @@
 
   .imagenes-negocio img {
     justify-content: center;
-    width: 50vw;
     height: 250px;
     object-fit: cover;
+  }
+
+  #imagen-1-tacosjuan img {
+    width: 100vw;
+  }
+  #imagen-2-tacosjuan {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .imagenes-negocio {
-    display: flex;
+  #imagen-1-tacosjuan img {
+    width: 100vw;
+    height: 50vh;
   }
-
-  .imagenes-negocio img {
-    justify-content: center;
-    width: 50vw;
-    height: 300px;
-    object-fit: cover;
+  #imagen-2-tacosjuan {
+    display: none;
   }
 }
