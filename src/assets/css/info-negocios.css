@@ -96,13 +96,15 @@ section form {
     flex-wrap: wrap;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 15px;
+
   }
 
   .info-negocio {
     flex-direction: row;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .contenedor-titulo-negocios {
@@ -117,8 +119,28 @@ section form {
     border: none;
     padding-left: 30px;
     font-size: large;
+    align-items: center;
+    display: flex
   }
+
+  .lista-datos li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+  }
+
+  .lista-datos li p{
+    display:flex;
+    padding-left: 10px;
+
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
+  .lista-datos {
+    align-items: center;
+    display: flex
+  }
+
 }

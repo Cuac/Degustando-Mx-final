@@ -13,7 +13,7 @@ function OpinionsUsers() {
             />
           </div>
           <div>
-            <p>Limpio y buen servicio, nos atienden rápido siempre.</p>
+            <p>Limpio y buen servicio, nos atienden rápido siempre ¡Los mejores tacos de la zona!</p>
           </div>
         </div>
 
@@ -25,7 +25,7 @@ function OpinionsUsers() {
             />
           </div>
           <div>
-            <p>Buen sabor y buna variedad de salsitas ¡Recomendado!</p>
+            <p>Buen sabor y buna variedad de salsitas. Los tacos de costilla son el estelar.</p>
           </div>
         </div>
       </div>

@@ -6,7 +6,8 @@ import {
   faMapMarkerAlt,
   faPhone,
   faClock,
-  faStar
+  faStar,
+  faComment
 } from "@fortawesome/free-solid-svg-icons";
 
 import logoTacosJuan1 from "../assets/images/logo-tacos-donjuan.png";
@@ -31,18 +32,21 @@ function InfoNegocios() {
         <ul>
           <li>
             <FontAwesomeIcon icon={faClock} />
-            11:00-01:00
+            <p>11:00-01:00</p>
           </li>
           <li>
             <FontAwesomeIcon icon={faPhone} />
-            55-55-55-55
+            <p>55-55-55-55</p>
           </li>
           <li>
             <FontAwesomeIcon icon={faMapMarkerAlt} />
-            Vicente Suárez esq. Circuito Vasconcelos
+           <p>Vicente Suárez esq. Circuito Vasconcelos</p> 
           </li>
 
-          <li>Abren todos los domingos y se admiten mascotas.</li>
+          <li>
+            <FontAwesomeIcon icon={faComment} /> 
+            <p>Abren todos los domingos y se admiten mascotas.</p>
+            </li>
         </ul>
       </div>
     </div>
