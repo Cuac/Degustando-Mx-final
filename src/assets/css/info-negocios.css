@@ -75,7 +75,9 @@ section form {
 }
 
 .lista-datos li {
-  padding-top: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
 }
 
 .star-review {
@@ -88,6 +90,11 @@ section form {
 .star-review p {
   margin: 0;
   padding-top: 5px;
+}
+.lista-datos li p{
+  display:flex;
+  padding-left: 10px;
+
 }
 
 @media only screen and (min-width: 768px) {

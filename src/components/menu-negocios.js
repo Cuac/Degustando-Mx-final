@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/css/menu-negocios.css";
 import Button from 'muicss/lib/react/button';
+import {Link} from 'react-router-dom';
 
 function MenuNegocios() {
   return (
@@ -20,7 +21,10 @@ function MenuNegocios() {
 
           </ul>
           <div className="boton-vamosacomer">
-          <Button color="primary"  >¡Ir a comer!</Button>
+          <Link to="/ir-a-comer">
+           <Button color="primary"  >¡Ir a comer!</Button>
+          {/* <Link className='' to='/ir-a-comer'> ¡Ir a comer!  </Link> */}
+          </Link>
           </div>
         </div>
       </div>

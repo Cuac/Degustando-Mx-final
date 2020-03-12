@@ -12,6 +12,7 @@ import {
 
 import logoTacosJuan1 from "../assets/images/logo-tacos-donjuan.png";
 
+
 function InfoNegocios() {
   return (
     <div className="info-negocio">
