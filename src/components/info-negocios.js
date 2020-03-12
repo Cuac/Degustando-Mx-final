@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/info-negocios.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowAltCircleLeft,
+  // faArrowAltCircleLeft,
   faMapMarkerAlt,
   faPhone,
   faClock,
