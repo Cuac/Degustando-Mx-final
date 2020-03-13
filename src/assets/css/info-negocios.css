@@ -14,14 +14,14 @@ section form {
   margin-top: 30px;
 }
 
-.contenedor-titulo-negocios{
+.contenedor-titulo-negocios {
   display: flex;
   align-items: left;
   padding: 0;
   margin-top: 10px;
 }
 
-.titulo-negocio{
+.titulo-negocio {
   flex: 5 1;
 }
 
@@ -33,8 +33,8 @@ section form {
 }
 
 .titulo-negocio h2 {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .info-negocios ul {
@@ -42,7 +42,7 @@ padding: 0;
   padding: 10px 10px;
 }
 
-.img-logo-taco{
+.img-logo-taco {
   flex: 1;
 }
 
@@ -55,8 +55,8 @@ padding: 0;
 .titulo-negocio {
   flex: 5;
   display: inline-block;
-  padding-top:5px;
-  padding-bottom:5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 15px;
 }
 
@@ -75,7 +75,9 @@ padding: 0;
 }
 
 .lista-datos li {
-  padding-top: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
 }
 
 .star-review {
@@ -85,7 +87,67 @@ padding: 0;
   padding: 0;
 }
 
-.star-review p{
+.star-review p {
   margin: 0;
   padding-top: 5px;
+}
+.lista-datos li p{
+  display:flex;
+  padding-left: 10px;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .titulo-negocio {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+
+  .info-negocio {
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contenedor-titulo-negocios {
+    flex-direction: column;
+  }
+
+  .titulo-negocio {
+    flex-direction: column;
+  }
+
+  .lista-datos {
+    border: none;
+    padding-left: 30px;
+    font-size: large;
+    align-items: center;
+    display: flex
+  }
+
+  .lista-datos li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+  }
+
+  .lista-datos li p{
+    display:flex;
+    padding-left: 10px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .lista-datos {
+    align-items: center;
+    display: flex
+  }
+
 }
