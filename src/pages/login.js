@@ -14,6 +14,7 @@ class Sesion extends Component {
       password: "",
       remember: false
     }; 
+    this.handleClick = this.handleClick.bind (this);
   }
   
   /* const [correo, setCorreo] = useState("");
@@ -40,31 +41,34 @@ class Sesion extends Component {
     
     componentDidMount() { 
       console.log(fire)
-    }
-    guardar(evt){
-      evt.preventDefault();
-      const data = fire.database().ref('users')
-      const email = document.getElementById('user').value;
-      const pass = document.getElementById('pass').value;
-      const user = {
-        email: email,
-        pass: pass
-      };
+    };
+    // guardar(evt){
+    //   evt.preventDefault();
+    //   const data = fire.database().ref('users')
+    //   const email = document.getElementById('user').value;
+    //   const pass = document.getElementById('pass').value;
+    //   const user = {
+    //     email: email,
+    //     pass: pass
+    //   };
 
-      try {
-        data.push(user);
-        console.log('exito');
-        document.getElementById('user').value='';
-        document.getElementById('pass').value='';
-        console.log('este es el corro ' , email, 'este es la contraseña' , pass );
-      } catch(e) {
-        console.log('error', e);
-      }
-    }
+      // try {
+      //   data.push(user);
+      //   console.log('exito');
+      //   document.getElementById('user').value='';
+      //   document.getElementById('pass').value='';
+      //  // console.log('este es el corro: ' , email, 'este es la contraseña:' , pass );
+      //   } catch(e) {
+      //   console.log('error', e);
+      //   };
 
-
-
-
+        handleClick(event){
+        event.preventDefault();
+        console.log('sss');
+        // this.setState(
+        // )
+        };
+    
     render() {
       return (
     
@@ -79,7 +83,7 @@ class Sesion extends Component {
                 <label className='check'><input  type='checkbox'/> Recordarme </label>
                 <button className='botonOne'> Iniciar Sesión  </button>
             </form> */}
-            <form className='registro'onSubmit={this.guardar.bind(this)} >
+            <form className='registro'onSubmit={this.handleClick} >
                 <input id="user"  className='registros' placeholder= 'Correo electronico' />
                 <input id="pass"  className='registros' type='password' placeholder= 'Contraseña' />
                 <label className='check'><input  type='checkbox'/> Recordarme </label>
