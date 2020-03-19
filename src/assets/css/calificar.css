@@ -9,7 +9,7 @@
 .imagen-taqueria{
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 76%;
   height: 35%;
   margin: auto;
   border-radius: 20px;
@@ -31,7 +31,6 @@
 
 .qualify{
   display: flex;
-  flex-direction: column;
   justify-content:  center;
 }
 
@@ -43,8 +42,9 @@
 
 
 .clasificacion{
+  display: flex;
   font-size: 40px;
-  margin: 10px 10px 20px 50px;
+  
 
 }
 
@@ -55,16 +55,19 @@
   margin: auto;
 }
 
-.boton-qualify{
-  display: flex;
-  justify-content: center; 
+/* .boton-calificar{
+  display: flex !important;
+  width: 15rem !important;
+  height: 2rem !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+} */
+
+.cambios .boton{
+  padding: 20px;
+  width: auto !important;
 }
 
-.boton-qualify .boton{
-  height: auto;
+.cambios{
   padding: 10px;
-  width: 80vw;
-  top: 0;
-  margin-top: 20px;
-  margin-bottom: 25px;
 }
