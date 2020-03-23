@@ -1,9 +1,23 @@
-import React, {useState} from "react";
+import React, {useState, Component} from "react";
 import '../assets/css/login.css';
 import appLogo from '../assets/images/logo-degustado-nuevo.png.JPG';
+import fire from '../scrips/fire';
 
-function Sesion(props) {
-  const [correo, setCorreo] = useState("");
+//function Sesion(props) {
+
+class Sesion extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      password: "",
+      remember: false
+    }; 
+    this.handleClick = this.handleClick.bind (this);
+  }
+  
+  /* const [correo, setCorreo] = useState("");
   const [pass, setPass] = useState("");
 
   const handleChange = event => {
@@ -22,24 +36,63 @@ function Sesion(props) {
     } else{
       alert ('Usuario invalido, inteta de nuevo')
     }
-  };
+  }; */
 
-    return (
     
-    <div className='flex-logo'>
-        <h1 className='titulo'>Inicio de Sesión</h1>
-        <div> 
-            <img src={appLogo}  alt="Logo"></img>  
+    componentDidMount() { 
+      console.log(fire)
+    };
+    // guardar(evt){
+    //   evt.preventDefault();
+    //   const data = fire.database().ref('users')
+    //   const email = document.getElementById('user').value;
+    //   const pass = document.getElementById('pass').value;
+    //   const user = {
+    //     email: email,
+    //     pass: pass
+    //   };
+
+      // try {
+      //   data.push(user);
+      //   console.log('exito');
+      //   document.getElementById('user').value='';
+      //   document.getElementById('pass').value='';
+      //  // console.log('este es el corro: ' , email, 'este es la contraseña:' , pass );
+      //   } catch(e) {
+      //   console.log('error', e);
+      //   };
+
+        handleClick(event){
+        event.preventDefault();
+        console.log('sss');
+        // this.setState(
+        // )
+        };
+    
+    render() {
+      return (
+    
+        <div className='flex-logo'>
+            <h1 className='titulo'>Inicio de Sesión</h1>
+            <div> 
+                <img src={appLogo}  alt="Logo"></img>  
+            </div>
+            {/* <form className='registro' onSubmit={handleSubmit}>
+                <input onChange={handleChange} className='registros' placeholder= 'Correo electronico' />
+                <input onChange={handleChangeTwo} className='registros' type='password' placeholder= 'Contraseña' />
+                <label className='check'><input  type='checkbox'/> Recordarme </label>
+                <button className='botonOne'> Iniciar Sesión  </button>
+            </form> */}
+            <form className='registro'onSubmit={this.handleClick} >
+                <input id="user"  className='registros' placeholder= 'Correo electronico' />
+                <input id="pass"  className='registros' type='password' placeholder= 'Contraseña' />
+                <label className='check'><input  type='checkbox'/> Recordarme </label>
+                <button  className='botonOne'> Iniciar Sesión  </button>
+            </form>
+            
         </div>
-        <form className='registro' onSubmit={handleSubmit}>
-            <input onChange={handleChange} className='registros' placeholder= 'Correo electronico' />
-            <input onChange={handleChangeTwo} className='registros' type='password' placeholder= 'Contraseña' />
-            <label className='check'><input  type='checkbox'/> Recordarme </label>
-            <button className='botonOne'> Iniciar Sesión  </button>
-        </form>
-        
-    </div>
-    )
+        )
+    }
 
 }
 

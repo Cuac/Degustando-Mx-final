@@ -8,3 +8,32 @@
   height: 15vh;
   object-fit: cover;
 }
+
+@media only screen and (min-width: 768px) {
+  .imagenes-negocio {
+    display: flex;
+  }
+
+  .imagenes-negocio img {
+    justify-content: center;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  #imagen-1-tacosjuan img {
+    width: 100vw;
+  }
+  #imagen-2-tacosjuan {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #imagen-1-tacosjuan img {
+    width: 100vw;
+    height: 50vh;
+  }
+  #imagen-2-tacosjuan {
+    display: none;
+  }
+}

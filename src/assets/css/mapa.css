@@ -1,7 +1,10 @@
+
+
 body{
  
     margin:0;
     padding:0;
+    
     /*background-color: #b2c8f7;
     //background-repeat: no-repeat;
     //background-position: right top;
@@ -9,26 +12,26 @@ body{
     */
    /*background-size:cover; */
     height: 100vh;
-}
+   
+ }
 
 
  .flex-inicio {
     display: flex;
-   /* flex-direction: column; */
-   /* align-items: flex-start;*/
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 10px;
-    position: relative; 
          
+}
+
+.flex-input {
+    width: 500px;
+
 }
 
 .flex-map {
     width: 100%;
-}
-
-.flex-negocio {
-    position: absolute;
-    z-index: 2;
 }
 
 

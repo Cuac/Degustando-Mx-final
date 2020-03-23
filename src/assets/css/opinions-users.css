@@ -12,7 +12,12 @@ section form {
 
 .opiniones-users img {
   width: 15vw;
-  object-fit: cover;
+}
+
+.user-description img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .user-description {
@@ -30,4 +35,55 @@ section form {
 
 #user-2 {
   margin-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .opiniones-users {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .user-description {
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+  }
+
+  #user-2 {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .opiniones-users {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: large;
+  }
+
+  .opiniones-users img {
+    width: 10vw;
+  }
+  
+  .user-description {
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #user-2 {
+    margin-top: 0px;
+  }
+
+  .menu-comida ul{
+    font-size: large;
+  }
+
+
 }
