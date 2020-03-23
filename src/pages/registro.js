@@ -29,6 +29,7 @@ function Sesion (props) {
       };
       
       const login = event =>{
+
         event.preventDefault();
       firebase.auth().createUserWithEmailAndPassword(correo, correo2, pass, pass2).then(usuario =>{setUsuario (usuario);}).catch(function(error) {alert.log(error);
         props.history.push('/mapa');
