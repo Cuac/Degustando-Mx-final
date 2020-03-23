@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-import {env} from '../environment/environment'
+// import {env} from '/src/environment'
 
-const fire = firebase.initializeApp(env.Firebase);
+const fire = firebase.initializeApp();
 export default fire;
