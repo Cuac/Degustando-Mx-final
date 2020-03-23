@@ -31,9 +31,6 @@ function Sesion (props) {
       const login = event =>{
 
         event.preventDefault();
-<<<<<<< HEAD
-      firebase.auth().createUserWithEmailAndPassword(correo, correo2, pass, pass2).then(usuario =>{setUsuario (usuario);}).catch(function(error) {alert.log(error);
-=======
       firebase
           .auth()
           .createUserWithEmailAndPassword(nom,correo, correo2, pass, pass2)
@@ -42,7 +39,6 @@ function Sesion (props) {
         } )
         .catch(function(error) {
         alert.log(error);
->>>>>>> origin/login
         props.history.push('/mapa');
       
 });
